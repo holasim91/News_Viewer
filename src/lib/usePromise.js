@@ -7,6 +7,7 @@ export default function usePromise(promiseCreator, deps) {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    //useEffect 사용할 시 async함수 따로 선언
     const process = async () => {
       setLoading(true);
       try {
